@@ -1,2 +1,2 @@
 # jlindsley2.github.io
-My first website
+This is my first legitimate attempt at making a public website
