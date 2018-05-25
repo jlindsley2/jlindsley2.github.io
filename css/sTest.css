@@ -1,0 +1,35 @@
+body {
+	font-family: helvetica;
+}
+
+a {
+	margin-top: 25px;
+	display: block;
+	text-align: center;
+	font-size: 22px;
+	height: 30px;
+}
+
+.info {
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	width: 600px;
+	font-family: helvetica;
+}
+
+.question {
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+	width: 650px;
+	font-size: 20px;
+}
+
+#query {
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+

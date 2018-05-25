@@ -1,0 +1,94 @@
+p {
+	
+}
+
+body {
+	
+}
+
+content {
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+th {
+	text-align: center;
+	font-size: 18px;
+	background-color: rgb(50, 160, 255);
+	column-span: 2;
+}
+
+iframe {
+	display: inline;
+	float: right;
+	margin-top: 100px;
+}
+
+
+table {
+	display: inline;
+	width: 300px;
+}
+
+.content {
+	margin-left: 225px;
+	margin-right: 350px;
+	padding-top: 1px;
+}
+
+.creepy {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: none;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-size: 30px;
+}
+
+.links {
+	display: inline;
+	float: left;
+	padding: 0px 5px 15px 5px;
+	min-height: 100%;
+	max-width: 20%;
+}
+
+.summary {
+	width: 305px;
+	padding: 10px 10px 10px 10px;
+	float: right;
+	display: inline;
+}
+
+.sidePics {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-width: 320px;
+}
+
+#disabler {
+	color: blue;
+	text-decoration: underline;
+}
+
+#disabler:hover {
+	color: blue;
+	text-decoration: underline;
+	cursor: help;
+}
