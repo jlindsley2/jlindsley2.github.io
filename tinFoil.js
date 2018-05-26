@@ -9,7 +9,7 @@ var offset = 0;
 
 $("#disabler").click(tinFoilHatToggle);
 
-setInterval(showPic, 10000);
+setInterval(showPic, 15000);
 
 function tinFoilHatToggle() {
 	if (tinFoilHat === true) {
@@ -25,10 +25,10 @@ function showPic() {
 	console.log("step1");
 	if (tinFoilHat === true) {
 		audio.play();
-		offset = Math.floor(Math.random() * 3);
+		offset = Math.floor(Math.random() * 12);
 		currentPic = (Math.floor(Math.random() * 11) + 1);
 		setTimeout(function() {$('#' + currentPic.toString()).show();}, offset);
-		setTimeout(function() {$('#' + currentPic.toString()).hide();}, offset + 60);
+		setTimeout(function() {$('#' + currentPic.toString()).hide();}, offset + 80);
 		console.log("step2 " + offset + " " + currentPic);
 	}
 	
