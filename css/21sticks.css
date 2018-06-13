@@ -35,7 +35,7 @@ p {
 	height: 375px;
 	max-height: 500px;
 	max-width: 1400px;
-	justify: center;
+	/*justify: center;*/
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
