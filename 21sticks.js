@@ -11,8 +11,6 @@ function newGame() {
 		numSticks = parseInt(prompt("Invalid input, please give a real number (12-100)"));
 	}
 	
-	document.getElementById("lose").innerHTML =  "";
-	document.getElementById("win").innerHTML = "";
 	document.getElementById("message").innerHTML = "";
 	update(0);
 }

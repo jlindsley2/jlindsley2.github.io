@@ -44,3 +44,7 @@ p {
 	margin-left: 10px;
 	margin-top: 10px;
 }
+
+.players {
+	display: inline-block;
+}
