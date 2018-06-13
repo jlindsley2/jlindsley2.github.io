@@ -33,7 +33,7 @@ p {
 #game-display {
 	display: inline-block;
 	height: 375px;
-	max-height: 450px;
+	max-height: 500px;
 	max-width: 1400px;
 	justify: center;
 	margin-left: auto;
@@ -73,6 +73,11 @@ p {
 }
 
 .btn.btn-danger{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.btn.btn-info{
 	margin-left: 10px;
 	margin-top: 10px;
 }

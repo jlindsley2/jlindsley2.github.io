@@ -3,7 +3,7 @@ document.getElementById("take1").addEventListener("click", function() { bot(1); 
 document.getElementById("take2").addEventListener("click", function() { bot(2); });
 document.getElementById("take3").addEventListener("click", function() { bot(3); });
 
-
+// Set up the new game
 function newGame() {
 	document.getElementById("game-board").style.display = "none";
 	document.getElementById("play-again").style.display = "none";
@@ -82,4 +82,8 @@ function info() {
 
 function lose() {
 	alert("This was an idea I first learned about in discrete math a year ago. It was also the ONLY time since then that I've personally seen a practical use for mathematical induction. Essentially, the outcome of the game is determined by the first move.");
+}
+
+function badDisplay() {
+	alert("If you've visited previous versions of this page, it's likely that your cookies from that version, which could cause conflicts with the new version. Try clearing your cookies for \"https://jlindsley2.github.io\". Otherwise, there may be a flaw in the design. If this is the case, please take a screen shot and show it to Jacob Lindsley to see if it can be resolved.");
 }
