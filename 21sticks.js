@@ -29,7 +29,7 @@ function update(numTaken) {
 	if (numTaken === 0) {
 		setTimeout(function() {document.getElementById("message").innerHTML = '<h3>' + numSticks + " sticks remaining</h3><br><br><br><br<br><br><br><br><br>";}, 1000);
 	} else if (numSticks != 0) {
-		setTimeout(function() {document.getElementById("message").innerHTML = '<h3>' + numSticks + " sticks remaining</h3><br><br> Opponent picked up: " + numTaken + "<br><br><br><br>";}, 1000);
+		setTimeout(function() {document.getElementById("message").innerHTML = '<h3>' + numSticks + " sticks remaining</h3><br><br><br> Opponent picked up: " + numTaken + "<br><br><br><br>";}, 1000);
 	}
 }
 
@@ -85,5 +85,5 @@ function lose() {
 }
 
 function badDisplay() {
-	alert("If you've visited previous versions of this page, it's likely that your cookies from that version, which could cause conflicts with the new version. Try clearing your cookies for \"https://jlindsley2.github.io\". Otherwise, there may be a flaw in the design. If this is the case, please take a screen shot and show it to Jacob Lindsley to see if it can be resolved.");
+	alert("If you've visited previous versions of this page, it's likely that your cookies from that version, which could cause conflicts with the new version. Try clearing your cookies for \"https://jlindsley2.github.io\". Otherwise, there may be a flaw in the design. If this is the case, please take a screen shot and show it to Jacob Lindsley to see if it can be resolved. Please include screen dimensions, browser, and browser version.");
 }
