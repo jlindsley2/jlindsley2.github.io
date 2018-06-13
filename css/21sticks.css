@@ -1,0 +1,46 @@
+p {
+	width: 40%;
+}
+
+#message {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	font-size: 22px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+#player {
+	display: inline-block;
+	width: 240px;
+	
+}
+
+#bot {
+    vertical-align: baseline;
+	margin-bottom: 40px;
+    display: inline-block;
+    width: 22%;
+}
+
+#game-display{
+	display: inline-block;
+	height: 375px;
+}
+
+.btn.btn-success{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.btn.btn-warning{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.btn.btn-danger{
+	margin-left: 10px;
+	margin-top: 10px;
+}
