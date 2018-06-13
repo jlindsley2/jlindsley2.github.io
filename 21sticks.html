@@ -11,37 +11,27 @@
 		<button class="btn btn-danger" onclick="lose()"> Why do I keep losing? </button>
 		<br><br><br><br>
 		
+		<div id="game-board">
 		<div id="game-display" class="col-12">
-			<pre id="player">
-	    (.,------...__
-         _.'"             `.
-       .'  .'   `, `. `.    `
-      . .'   .'/''--...__`.  \
-     . .--.`.  ' "-.     '.  |
-     ''  .'  _.' .())  .--":/
-     ''(  \_\      '   (()(
-     ''._'          (   \ '
-     ' `.            `--'  '
-      `.:    .   `-.___.'  '
-       `.     .    _  _  .'
-         )       .____.-'
-       .'`.        (--..
-     .' \  /\      / /  `.
-   .'    \(  \    /|/     `.
- .'           \__/          `.
-/      |        o      |      \
-       |               |      |
-			</pre>
+			<img id="player" src="./images/player.jpg" />
 			<p id="message"></p>
-			<img id="bot" src="./images/bot.jpg" />
+			<img id="bot" src="./images/bot2.jpg" />
+			<br>
+			<div id="buttons">
+			<button id="take1" class="btn btn-primary">Take 1 Stick</button>
+			<button id="take2" class="btn btn-primary">Take 2 Sticks</button>
+			<button id="take3" class="btn btn-primary">Take 3 Sticks</button>
+			</div>
+			<button id="play-again" class="btn btn-success" onclick="newGame()">Yes!</button>
 		</div>
-		<h2>&emsp;&emsp;&emsp; YOU &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; OPPONENT</h2>
 		<br>
-		<button id="take1" class="btn btn-primary">Take 1 Stick</button>
-		<button id="take2" class="btn btn-primary">Take 2 Sticks</button>
-		<button id="take3" class="btn btn-primary">Take 3 Sticks</button>
 		
+		</div>
 		
+		<footer id="footer">
+		<p>Created by Jacob Lindsley
+		<br>21Sticks v2.1.0</p>
+		</footer>
 	</body>
 	<script src='./21sticks.js'></script>
 </html>
