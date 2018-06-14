@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>21 Sticks</title>
-		<link rel="stylesheet" type="text/css" href="./css/21sticks.css">
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	</head>
-	<body>
-		<button class="btn btn-success" onclick="newGame()">Start new game</button>
-		<button class="btn btn-warning" onclick="info()"> Instructions </button>
-		<button class="btn btn-danger" onclick="lose()"> Why do I keep losing? </button>
-		<button type="button" class="btn btn-info" onclick="badDisplay()">My display is messed up</button>
-		<br><br><br><br>
-		
-		<div id="game-board">
-		<div id="game-display" class="col-12">
-			<img id="player" src="./images/player.jpg" />
-			<p id="message"></p>
-			<img id="bot" src="./images/bot2.jpg" />
-			<br>
-			<div id="buttons">
-			<button id="take1" class="btn btn-primary">Take 1 Stick</button>
-			<button id="take2" class="btn btn-primary">Take 2 Sticks</button>
-			<button id="take3" class="btn btn-primary">Take 3 Sticks</button>
-			</div>
-			<button id="play-again" class="btn btn-success" onclick="newGame()">Yes!</button>
-		</div>
-		<br>
-		
-		</div>
-		
-		<footer id="footer">
-		<p>Created by Jacob Lindsley
-		<br>21Sticks v2.1.4</p>
-		</footer>
-	</body>
+  <head>
+    <title>21 Sticks</title>
+    <link rel="stylesheet" type="text/css" href="./css/21sticks.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  </head>
+  <body>
+    <button class="btn btn-success" onclick="newGame()">Start new game</button>
+    <button class="btn btn-warning" onclick="info()"> Instructions </button>
+    <button class="btn btn-danger" onclick="lose()"> Why do I keep losing? </button>
+    <button type="button" class="btn btn-info" onclick="badDisplay()">My display is messed up</button>
+
+    <div id="game-board">
+      <div id="game-display" class="col-12">
+        <img id="player" src="./images/player.jpg" />
+        <p id="message"></p>
+        <img id="bot" src="./images/bot2.jpg" />
+        <br>
+        <div id="buttons">
+          <button id="take1" class="btn btn-primary">Take 1 Stick</button>
+          <button id="take2" class="btn btn-primary">Take 2 Sticks</button>
+          <button id="take3" class="btn btn-primary">Take 3 Sticks</button>
+        </div>
+        <button id="play-again" class="btn btn-success" onclick="newGame()">Yes!</button>
+      </div>
+      <br>
+
+    </div>
+
+    <footer id="footer">
+      <p>Created by Jacob Lindsley
+      <br>21Sticks v2.2.0</p>
+    </footer>
 	<script src='./21sticks.js'></script>
+  </body>
 </html>
