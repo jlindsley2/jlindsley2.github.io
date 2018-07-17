@@ -1,0 +1,33 @@
+body {
+	background-color: #283747;
+}
+
+p {
+	width: 40%;
+}
+
+textarea {
+	resize: none;
+}
+
+.textarea{
+	height: 50px;
+	background-color: #F9E79F;
+}
+
+#decoder{
+	text-align: center;
+	height: 10%;
+}
+
+#offsetInput{
+	margin: 10px 0px 0px 0px;
+	height: 16px;
+}
+
+#shift {
+	height: 30px;
+	width: 50px;
+	display: inline;
+	vertical-align: super;
+}

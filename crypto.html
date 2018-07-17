@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Basic Cryptography</title>
+  <link rel="stylesheet" type="text/css" href="./css/crypto.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./crypto.js"></script>
+  </head>
+
+  <body>
+    <h1><center>Cryptography</center></h1>
+    <hr>
+    <textarea id="messageInput" class="textarea" cols="75" name="Input" >Paste your string to decode/encode here!</textarea>
+    <br>
+    <div id="Params">
+      <button id="shifter" name="test">Shift</button>
+      <select>
+        <option value="Caesar">Caesar</option>
+      </select>
+      <span><font color="white">Offset: </font></span>
+      <textarea id="offsetInput" cols="5" maxlength="5">(1-26)</textarea>
+    </div>
+    <br>
+    <textarea id="messageOutput" class="textarea" cols="75" readonly placeholder="Output will be here">
+    </textarea>
+  </body>
+</html>
