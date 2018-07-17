@@ -10,7 +10,12 @@ textarea {
 	resize: none;
 }
 
-.textarea{
+.inputTextArea{
+	height: 50px;
+	background-color: #F9E79F;
+}
+
+.outputTextArea{
 	height: 50px;
 	background-color: #F9E79F;
 }
@@ -23,6 +28,7 @@ textarea {
 #offsetInput{
 	margin: 10px 0px 0px 0px;
 	height: 16px;
+	width: 60px;
 }
 
 #shift {

@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 function caesarShift() {
   console.log("Start shift");
-  rawText = $("#messageInput").val().toLowerCase();
+  rawText = $("#messageInput").val();
   offset = $("#offsetInput").val();
   if (offset !== parseInt(offset).toString()) {
     output("!!!WARNING!!! Set the offset correctly before shifting! (1-26)")
@@ -22,6 +22,9 @@ function caesarShift() {
     charCode = rawText.charCodeAt(i);
     if (charCode > 96 && charCode < 123) {
       charCode = (((charCode + offset)%97)%26) + 97;
+      result += String.fromCharCode(charCode);
+    } else if (charCode > 64 && charCode < 91) {
+      charCode = (((charCode + offset)%65)%26) + 65;
       result += String.fromCharCode(charCode);
     } else {
       result += rawText[i];

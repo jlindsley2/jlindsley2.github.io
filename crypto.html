@@ -10,7 +10,7 @@
   <body>
     <h1><center>Cryptography</center></h1>
     <hr>
-    <textarea id="messageInput" class="textarea" cols="75" name="Input" >Paste your string to decode/encode here!</textarea>
+    <textarea id="messageInput" class="inputTextArea" cols="75" name="Input" >Paste your string to decode/encode here!</textarea>
     <br>
     <div id="Params">
       <button id="shifter" name="test">Shift</button>
@@ -18,10 +18,10 @@
         <option value="Caesar">Caesar</option>
       </select>
       <span><font color="white">Offset: </font></span>
-      <textarea id="offsetInput" cols="5" maxlength="5">(1-26)</textarea>
+      <input id="offsetInput" cols="2" maxlength="5" type="number" placeholder="(1-26)">
     </div>
     <br>
-    <textarea id="messageOutput" class="textarea" cols="75" readonly placeholder="Output will be here">
+    <textarea id="messageOutput" class="outputTextArea" cols="75" readonly>
     </textarea>
   </body>
 </html>
