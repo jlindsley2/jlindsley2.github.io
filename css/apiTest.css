@@ -1,0 +1,69 @@
+body {
+	background-color: #283747;
+}
+
+p {
+	width: 40%;
+}
+
+textarea {
+	resize: none;
+}
+
+div.inline {
+	width: 50%;
+	float: left;
+}
+
+.inputTextArea{
+	height: 50px;
+	background-color: #F9E79F;
+}
+
+.outputTextArea{
+	height: 50px;
+	background-color: #F9E79F;
+}
+
+#parent{
+  display: inline-block;
+	width: 100%;
+  clear: both;
+}
+
+#messageOutput {
+	margin-top: 10px;
+}
+
+#decoder{
+	text-align: center;
+	height: 10%;
+}
+
+#offsetInput{
+	margin: 10px 0px 0px 0px;
+	height: 16px;
+	width: 60px;
+}
+
+#shift {
+	text-align: center;
+	padding-top: 50px;
+}
+
+#get {
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+#responseField {
+	margin: auto;
+  margin-top: 20px;
+	min-height: 150px;
+  background-color: #1f233e;
+	width: 75%;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 40px;
+}

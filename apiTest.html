@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Basic Cryptography</title>
+  <link rel="stylesheet" type="text/css" href="./css/apiTest.css">
+  </head>
+  <body>
+    <h1><center>Cryptography</center></h1>
+    <hr>
+    <div id="parent">
+      <div id="shift" class="inline">
+        <textarea id="messageInput" class="inputTextArea" cols="75" name="Input" >Paste your string to decode/encode here!</textarea>
+        <br>
+        <button id="shifter" name="test">Shift</button>
+        <select>
+          <option value="Caesar">Caesar</option>
+        </select>
+        <span><font color="white">Offset: </font></span>
+        <input id="offsetInput" cols="2" maxlength="5" type="number" placeholder="(1-26)">
+        <br>
+        <textarea id="messageOutput" class="outputTextArea" cols="75" readonly></textarea>
+      </div>
+      <div id="get" class="inline">
+        <input id="getInput" type="text" value="">
+        <select id="queryType">
+          <option value="sp">Contains Letters</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button id="requestWord">Submit</button>
+        <div id="responseField">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./apiTest.js"></script>
+  </body>
+</html>
