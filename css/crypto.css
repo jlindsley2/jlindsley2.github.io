@@ -8,16 +8,27 @@ p {
 
 textarea {
 	resize: none;
+	background-color: #F9E79F;
 }
 
 .inputTextArea{
 	height: 50px;
-	background-color: #F9E79F;
 }
 
 .outputTextArea{
 	height: 50px;
-	background-color: #F9E79F;
+	margin-top: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #decoder{
@@ -36,4 +47,20 @@ textarea {
 	width: 50px;
 	display: inline;
 	vertical-align: super;
+}
+
+#responseInput {
+	height: 16px;
+	width: 200px;
+	align: center;
+	vertical-align: top;
+}
+
+#responseButton {
+	vertical-align: top;
+}
+
+#responseOutput {
+	background-color: #F9E79F;
+	width: 300px;
 }

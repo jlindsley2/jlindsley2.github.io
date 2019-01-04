@@ -3,25 +3,47 @@
   <head>
   <title>Basic Cryptography</title>
   <link rel="stylesheet" type="text/css" href="./css/crypto.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="./crypto.js"></script>
   </head>
 
   <body>
-    <h1><center>Cryptography</center></h1>
+    <h1><center>(Basic) Cryptography</center></h1>
     <hr>
-    <textarea id="messageInput" class="inputTextArea" cols="75" name="Input" >Paste your string to decode/encode here!</textarea>
-    <br>
-    <div id="Params">
-      <button id="shifter" name="test">Shift</button>
-      <select>
-        <option value="Caesar">Caesar</option>
-      </select>
-      <span><font color="white">Offset: </font></span>
-      <input id="offsetInput" cols="2" maxlength="5" type="number" placeholder="(1-26)">
+    <div class="row">
+
+      <div class="column">
+        <textarea id="messageInput" class="inputTextArea" cols="75" name="Input" >Paste your string to decode/encode here!</textarea>
+        <div id="Params">
+          <button id="shifter" name="test">Shift</button>
+          <select> <option value="Caesar">Caesar</option> </select>
+          <span><font color="white">Offset: </font></span>
+          <input id="offsetInput" cols="2" maxlength="5" type="number" placeholder="(1-26)">
+        </div>
+      <textarea id="messageOutput" class="outputTextArea" cols="75" readonly> </textarea>
+      </div>
+
+      <div class="column">
+        <textarea id="responseInput"></textarea>
+        <select id="queryType">
+          <option value="ml=">Similar Meaning</option>
+          <option value="sl=">Sounds Like</option>
+          <option value="sp=">Crossword</option>
+          <option value="sp=">Similar Spelling</option>
+          <option value="rel_rhy=">Rhymes With</option>
+          <option value="rel_jjb=">Adjectives for</option>
+          <option value="rel_jja=">Nouns for</option>
+          <option value="rel_trg=">Related words</option>
+        </select>
+        <button id="responseButton">Search</button>
+        <br>
+        <div id="responseOutput">
+          <p id="responseOutputText"></p>
+        </div>
+      </div>
+
     </div>
-    <br>
-    <textarea id="messageOutput" class="outputTextArea" cols="75" readonly>
-    </textarea>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./crypto.js"></script>
   </body>
 </html>

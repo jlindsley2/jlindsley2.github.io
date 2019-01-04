@@ -1,3 +1,6 @@
+// This is not at all representative of how I code, especially in a professional environment.
+// This page is exclusively meant for functionality.
+
 var rawText = "";
 var offset = 0;
 
@@ -36,5 +39,58 @@ function caesarShift() {
 
 function output(text) {
   $("#messageOutput").val(text);
+  return;
+}
+
+// Adding new stuff below here, trying things slightly differently.
+const url = "https://api.datamuse.com/words?";
+const responseInput = document.querySelector("#responseInput");
+const responseOutput = document.querySelector("#responseOutput");
+var queryType = "rel_trg=";
+var queryDropDown = document.getElementById("queryType");
+document.getElementById("responseButton").addEventListener("click", displayResults);
+
+function getResponse() {
+  const query = responseInput.value;
+  queryType = queryDropDown.options[queryDropDown.selectedIndex].value;
+  console.log($("#queryType").name);
+  const fullurl = url + queryType + query;
+  const xmlHttpReq = new XMLHttpRequest();
+  xmlHttpReq.reponseType = "json";
+
+  xmlHttpReq.onreadystatechange = () => {
+    if (xmlHttpReq.readyState == XMLHttpRequest.DONE) {
+      parseResponse(xmlHttpReq.response);
+    }
+  };
+
+  xmlHttpReq.open("GET", fullurl);
+  xmlHttpReq.send();
+  return;
+}
+
+function parseResponse(response) {
+  if (!response.length) {
+    responseOutput.innerHTML = "No response. Perhaps try something else";
+    return;
+  }
+  let wordMatches = [];
+  response = JSON.parse(response);
+  for (let i = 0; i < Math.min(response.length, 20); ++i) {
+    wordMatches.push(`<li>${response[i].word}</li>`);
+  }
+  wordMatches = wordMatches.join("");
+  responseOutput.innerHTML = `<ol>${wordMatches}</ol>`;
+  return;
+}
+
+function displayResults(event) {
+  event.preventDefault();
+
+  while(responseOutput.firstChild) {
+    responseOutput.removeChild(responseOutput.firstChild);
+  }
+
+  getResponse();
   return;
 }
