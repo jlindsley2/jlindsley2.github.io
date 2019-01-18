@@ -7,6 +7,10 @@ var offset = 0;
 
 $(document).ready(function() {
   $("#shifter").click(function() {caesarShift();});
+  $("#howto").click(function() {alert("A Caesar shift is currently the only supported shift. Thanks to Datamuse, you can enter any word you want, select the type of query you "
+  + "want from the drop down menu, and submit it to get suggestions. For the crossword option, put '?'s for the unknown letters. I always thought something like this would be handy "
+  + "for cryptograms, for example the ones the NSA likes to put out. If the request failed, try changing the query and word. In the past it's had some issues with a header, but "
+  + "when I went to fix it it worked without issue before touching anything.");});
 });
 
 function caesarShift() {
